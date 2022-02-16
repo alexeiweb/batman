@@ -6,15 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Batman</title>
 
+  <link rel="preload" href="fonts/roboto-v29-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-v29-latin_cyrillic-500.woff2" as="font" type="font/woff2" crossorigin>
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="header">    
+    <button class="header__burger burger">
+
+    </button>
+
     <nav class="header__navigation navigation">
+      <button class="navigation__close">
+        
+      </button>
+
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link">Главная</a>
+          <a class="navigation__link navigation__link_active">Главная</a>
         </li>
         <li class="navigation__item">
           <a href="video.html" class="navigation__link">Видео</a>
@@ -26,34 +37,26 @@
 
       <p class="header__hashtag">#TheBatman</p>
 
-      <ul class="header__social">
+      <ul class="social">
         <li class="social__item">
-          <a href="" class="social__link">fb</a>
+          <a href="" class="social__link social__link_facebook"></a>
         </li>
         <li class="social__item">
-          <a href="" class="social__link">tw</a>
+          <a href="" class="social__link social__link_twitter"></a>
         </li>
         <li class="social__item"
-        ><a href="" class="social__link">ins</a>
+        ><a href="" class="social__link social__link_instagram"></a>
       </li>
       </ul>
-
-      <button class="navigation__close">
-        
-      </button>
     </nav>
 
     <div class="mute">
       <input class="mute__checkbox" type="checkbox" name="" id="mute">
       <label for="mute" class="mute__label"></label>
     </div>
-
-    <button class="header__burger burger">
-
-    </button>
   </header>
 
-  <main class="main">
+  <main class="main main_index">
     <img src="img/logo.png" alt="Логотип к фильму Бэтмен" class="logo" width="329" height="235">
   </main>
 

@@ -104,18 +104,12 @@ h1, h2, h3, p {
   display: block;
   width: 24px;
   height: 24px;
+  transition: color .3s ease-in-out;
+  color: #fff;
 }
 
-.social__link_facebook {
-  background-image: url('../img/fb.svg');
-}
-
-.social__link_twitter {
-  background-image: url('../img/tw.svg');
-}
-
-.social__link_instagram {
-  background-image: url('../img/inst.svg');
+.social__link:hover {
+  color: #E90000;
 }
 
 .burger,
@@ -240,6 +234,7 @@ h1, h2, h3, p {
 
 @media (max-width: 768px) {
   .header {
+    min-height: 50px;
     display: flex;
     align-items: center;
     padding-left: 20px;
